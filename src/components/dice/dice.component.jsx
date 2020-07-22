@@ -29,6 +29,7 @@ const Dice = (props) => {
             await wait(800);
             alert(`${players[currentPlayer-1].playerName} has Won!`);
             exitGameState();
+            setDiceState(true);
 
         } else if (nextMove > 100){
             await wait(200);
