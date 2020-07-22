@@ -9,7 +9,7 @@ const Players = ({players, currentPlayer}) => {
     return ( 
         <StyledPlayers>
             {
-                players.length >1 && players.map((player, index) => (
+                 players.map((player, index) => (
                     <Player key={index+1} {...player} currentPlayer={currentPlayer}/>
                 ))
             }
