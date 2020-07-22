@@ -15,7 +15,7 @@ const board = (totalWidth, rows, cols) => {
             posX: currentRowWidth,
             posY: currentColHeight,
             boxId: i,
-            color: (i+1)%2 === 0 ? '#ff6f6f' : '#ffe5e5'
+            color: `${"#"+((1<<24)*Math.random()|0).toString(16)}44`
         }
         myBoard.push(Box);
 
